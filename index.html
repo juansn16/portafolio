@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan A. Salazar N. | Ingeniero en Informática</title>
+  <link rel="icon" href="src/img/logo.ico" type="image/x-icon" />
+  <meta name="description"
+    content="Portafolio profesional de Juan A. Salazar - Ingeniero en Informática especializado en desarrollo web y administración de sistemas" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+
+<body class="bg-gray-50 dark:bg-dark-bg text-gray-800 dark:text-gray-100 overflow-x-hidden">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="fixed top-0 left-0 w-full z-50 glass">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="text-2xl font-heading font-bold text-gradient">JASN</a>
+
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="#hero"
+            class="nav-link text-gray-600 dark:text-gray-400 hover:text-cyan-400 dark:hover:text-cyan-400 transition-colors font-medium">Inicio</a>
+        </li>
+        <li><a href="#about"
+            class="nav-link text-gray-600 dark:text-gray-400 hover:text-cyan-400 dark:hover:text-cyan-400 transition-colors font-medium">Sobre
+            mí</a></li>
+        <li><a href="#skills"
+            class="nav-link text-gray-600 dark:text-gray-400 hover:text-cyan-400 dark:hover:text-cyan-400 transition-colors font-medium">Habilidades</a>
+        </li>
+        <li><a href="#projects"
+            class="nav-link text-gray-600 dark:text-gray-400 hover:text-cyan-400 dark:hover:text-cyan-400 transition-colors font-medium">Proyectos</a>
+        </li>
+        <li><a href="#contact"
+            class="nav-link text-gray-600 dark:text-gray-400 hover:text-cyan-400 dark:hover:text-cyan-400 transition-colors font-medium">Contacto</a>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <button id="theme-toggle"
+          class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          aria-label="Cambiar tema">
+          <i id="theme-icon" class="fas fa-sun text-yellow-400"></i>
+        </button>
+        <button id="menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center" aria-label="Menú">
+          <i class="fas fa-bars text-2xl text-gray-900 dark:text-white"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-white/10">
+      <ul class="flex flex-col px-4 py-4 gap-3 bg-white dark:bg-gray-900">
+        <li><a href="#hero"
+            class="block py-2 text-gray-600 dark:text-gray-400 hover:text-cyan-400 font-medium">Inicio</a></li>
+        <li><a href="#about" class="block py-2 text-gray-600 dark:text-gray-400 hover:text-cyan-400 font-medium">Sobre
+            mí</a></li>
+        <li><a href="#skills"
+            class="block py-2 text-gray-600 dark:text-gray-400 hover:text-cyan-400 font-medium">Habilidades</a></li>
+        <li><a href="#projects"
+            class="block py-2 text-gray-600 dark:text-gray-400 hover:text-cyan-400 font-medium">Proyectos</a></li>
+        <li><a href="#contact"
+            class="block py-2 text-gray-600 dark:text-gray-400 hover:text-cyan-400 font-medium">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <div id="tsparticles"></div>
+
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div data-aos="fade-up" data-aos-duration="800">
+        <span
+          class="inline-block px-4 py-2 rounded-full text-sm font-medium border border-cyan-400/30 text-cyan-600 dark:text-cyan-400 bg-cyan-400/5 mb-6">
+          <i class="fas fa-code mr-2"></i>Bienvenido a mi portafolio
+        </span>
+      </div>
+
+      <h1 data-aos="fade-up" data-aos-delay="100"
+        class="text-5xl sm:text-6xl md:text-7xl font-heading font-extrabold mb-6">
+        <span class="text-gray-900 dark:text-white">Hola, soy</span><br />
+        <span class="text-gradient">Juan A. Salazar N.</span>
+      </h1>
+
+      <p data-aos="fade-up" data-aos-delay="200"
+        class="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 font-light mb-8">
+        <span id="typewriter"></span>
+      </p>
+
+      <div data-aos="fade-up" data-aos-delay="300" class="flex flex-wrap justify-center gap-4">
+        <a href="#projects" class="btn-neon">
+          <i class="fas fa-rocket mr-2"></i>Ver Proyectos
+        </a>
+        <a href="#contact" class="btn-solid">
+          <i class="fas fa-envelope mr-2"></i>Contactar
+        </a>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="400" class="flex justify-center gap-6 mt-10">
+        <a href="https://github.com/juansn16" target="_blank" rel="noopener"
+          class="text-2xl text-gray-400 hover:text-cyan-400 transition-colors" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/juan-antonio-salazar-nuvaez-6775903a5" target="_blank" rel="noopener"
+          class="text-2xl text-gray-400 hover:text-cyan-400 transition-colors" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/JuanNuvaez2308" target="_blank" rel="noopener"
+          class="text-2xl text-gray-400 hover:text-cyan-400 transition-colors" aria-label="Twitter"><i
+            class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+      <i class="fas fa-chevron-down text-cyan-400 text-2xl"></i>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="py-20 md:py-28 px-4 overflow-hidden">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="section-title">Sobre Mí</h2>
+        <p class="section-subtitle">Ingeniero en Informática apasionado por el desarrollo web y la tecnología</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right" class="flex justify-center">
+          <img src="src/img/yo.png" alt="Juan A. Salazar"
+            class="w-40 h-40 rounded-full object-cover border-4 border-cyan-400/50 shadow-neon" />
+        </div>
+
+        <div data-aos="fade-left">
+          <h3 class="text-2xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+            <span class="text-cyan-400">&lt;</span> Ingeniero en Informática <span class="text-cyan-400">/&gt;</span>
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+            Ingeniero en Informática proactivo y adaptable, especializado en desarrollo web, administración de sistemas
+            y gestión de infraestructuras de red. Destaco en la resolución de problemas mediante el aprendizaje
+            autodidacta, respaldado por un sólido dominio técnico en JavaScript, PHP, Python, SQL, HTML5, CSS3 y
+            arquitectura MVC.
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+            Poseo experiencia práctica en integración de APIs de Inteligencia Artificial (Gemini AI), administración
+            avanzada de entornos Linux (Ubuntu Server, Bash), diseño y simulación de redes (Cisco Packet Tracer), así
+            como en soporte técnico y mantenimiento de hardware.
+          </p>
+
+          <div class="glass rounded-xl p-4 mb-6 flex items-center gap-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 flex-shrink-0">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Ingeniería en Informática</p>
+              <p class="text-gray-900 dark:text-white font-medium">URBE — Sept 2021 - Dic 2025</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="glass rounded-xl p-4">
+              <span class="block text-3xl font-heading font-bold text-cyan-400">1°</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Título Univ.</span>
+            </div>
+            <div class="glass rounded-xl p-4">
+              <span class="block text-3xl font-heading font-bold text-cyan-400">2+</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Proyectos</span>
+            </div>
+            <div class="glass rounded-xl p-4">
+              <span class="block text-3xl font-heading font-bold text-cyan-400">10+</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400">Tecnologías</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="py-20 md:py-28 px-4 bg-gray-100/50 dark:bg-white/[0.02]">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="section-title">Habilidades</h2>
+        <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Frontend -->
+        <div data-aos="fade-up" data-aos-delay="0">
+          <div class="card">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-12 h-12 rounded-xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 text-xl">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white">Frontend</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">HTML5</span>
+                  <span class="text-cyan-400 font-semibold">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">CSS3/Tailwind/Bootstrap</span>
+                  <span class="text-cyan-400 font-semibold">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">React</span>
+                  <span class="text-cyan-400 font-semibold">65%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:65%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">JavaScript</span>
+                  <span class="text-cyan-400 font-semibold">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="card">
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-purple-400/10 flex items-center justify-center text-purple-400 text-xl">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white">Backend</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">JavaScript</span>
+                  <span class="text-cyan-400 font-semibold">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">Python</span>
+                  <span class="text-cyan-400 font-semibold">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">PHP</span>
+                  <span class="text-cyan-400 font-semibold">65%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:65%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">SQL (MySQL/MariaDB)</span>
+                  <span class="text-cyan-400 font-semibold">78%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:78%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div data-aos="fade-up" data-aos-delay="200">
+          <div class="card">
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-emerald-400/10 flex items-center justify-center text-emerald-400 text-xl">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white">Tools</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">Linux & Bash</span>
+                  <span class="text-cyan-400 font-semibold">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">Git & GitHub</span>
+                  <span class="text-cyan-400 font-semibold">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">Cisco Packet Tracer</span>
+                  <span class="text-cyan-400 font-semibold">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:70%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-gray-700 dark:text-gray-300 font-medium">Hardware</span>
+                  <span class="text-cyan-400 font-semibold">100%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" style="width:100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="py-20 md:py-28 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="section-title">Proyectos</h2>
+        <p class="section-subtitle">Proyectos académicos y profesionales que he desarrollado</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Proyecto 1: Pasantías -->
+        <div data-aos="fade-up" data-aos-delay="0" class="card p-0 overflow-hidden group">
+          <div class="h-48 relative overflow-hidden">
+            <div class="slider-track relative w-full h-full">
+              <img src="assets/sistema-indicadores.png" alt="Sistema de Indicadores Corporativos"
+                class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000" />
+              <img src="assets/sistema-indicadores-2.png" alt="Sistema de Indicadores Corporativos"
+                class="slider-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" />
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-2">Sistema de Indicadores
+              Corporativos</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Sistema desarrollado durante pasantías para
+              automatizar el procesamiento de datos corporativos, facilitando la toma de decisiones basada en
+              indicadores de gestión en tiempo real.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">XAMPP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2: Tesis -->
+        <div data-aos="fade-up" data-aos-delay="100" class="card p-0 overflow-hidden group">
+          <div class="h-48 relative overflow-hidden">
+            <img src="assets/ecovertical.png" alt="App Huertos Verticales"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-2">App Huertos Verticales (Tesis)
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Plataforma integral para la gestión, monitoreo y
+              control de cultivos urbanos en propiedades horizontales. Integración de Gemini AI para reportes
+              inteligentes.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tag">React</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MVC</span>
+              <span class="tag">Gemini AI</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/juansn16/Produc-EcoVertical" target="_blank" rel="noopener"
+                class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"><i
+                  class="fab fa-github mr-1"></i>Código</a>
+              <a href="https://demo-ecovertical.onrender.com" target="_blank" rel="noopener"
+                class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"><i
+                  class="fas fa-external-link-alt mr-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: DVY -->
+        <div data-aos="fade-up" data-aos-delay="200" class="card p-0 overflow-hidden group">
+          <div class="h-48 relative overflow-hidden">
+            <img src="assets/dvy.png" alt="DVY - Descargador de Videos de YouTube"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-heading font-bold text-gray-900 dark:text-white mb-2">DVY - Descargador de Videos de
+              YouTube</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Aplicación de escritorio liviana para descargar
+              videos y audio de YouTube, construida con CustomTkinter y yt-dlp. Soporta múltiples resoluciones,
+              pausar/reanudar descargas e incrustación de metadatos.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="tag">CustomTkinter</span>
+              <span class="tag">yt-dlp</span>
+              <span class="tag">Python</span>
+              <span class="tag">FFmpeg</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="https://github.com/juansn16/DVY" target="_blank" rel="noopener"
+                class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"><i
+                  class="fab fa-github mr-1"></i>Código</a>
+              <a href="assets/DVY.rar" class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"><i
+                  class="fas fa-download mr-1"></i>Descargar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="py-20 md:py-28 px-4 bg-gray-100/50 dark:bg-white/[0.02]">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-subtitle">¿Tienes un proyecto en mente? Hablemos</p>
+      </div>
+
+      <div data-aos="fade-up" class="max-w-2xl mx-auto text-center">
+        <h3 class="text-2xl font-heading font-bold text-gray-900 dark:text-white mb-4">Hablemos de tu proyecto</h3>
+        <p class="text-gray-600 dark:text-gray-400 mb-8">
+          Estoy disponible para proyectos, colaboraciones o simplemente para conversar sobre tecnología.
+          No dudes en contactarme.
+        </p>
+
+        <a href="https://wa.me/584246953455?text=%C2%A1Hola!%20Vengo%20de%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte."
+          target="_blank" rel="noopener" class="btn-solid inline-flex items-center gap-3 text-lg px-8 py-4 mb-12">
+          <i class="fab fa-whatsapp text-2xl"></i>Contactar por WhatsApp
+        </a>
+
+        <div class="grid sm:grid-cols-3 gap-6 mb-12">
+          <div class="glass rounded-xl p-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 mx-auto mb-3">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Email</p>
+            <p class="text-gray-900 dark:text-white font-medium text-sm break-all">juansnuvaez@gmail.com</p>
+          </div>
+          <div class="glass rounded-xl p-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 mx-auto mb-3">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Ubicación</p>
+            <p class="text-gray-900 dark:text-white font-medium">Maracaibo, Zulia</p>
+          </div>
+          <div class="glass rounded-xl p-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 mx-auto mb-3">
+              <i class="fas fa-phone"></i>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Teléfono</p>
+            <p class="text-gray-900 dark:text-white font-medium">+58 424-6953455</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-4">
+          <a href="https://github.com/juansn16" target="_blank" rel="noopener"
+            class="w-12 h-12 rounded-lg bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-cyan-400 hover:text-white dark:hover:bg-cyan-400 dark:hover:text-white transition-all text-xl"
+            aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/juan-antonio-salazar-nuvaez-6775903a5" target="_blank" rel="noopener"
+            class="w-12 h-12 rounded-lg bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-cyan-400 hover:text-white dark:hover:bg-cyan-400 dark:hover:text-white transition-all text-xl"
+            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://x.com/JuanNuvaez2308" target="_blank" rel="noopener"
+            class="w-12 h-12 rounded-lg bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-cyan-400 hover:text-white dark:hover:bg-cyan-400 dark:hover:text-white transition-all text-xl"
+            aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/juan_san_15/" target="_blank" rel="noopener"
+            class="w-12 h-12 rounded-lg bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-cyan-400 hover:text-white dark:hover:bg-cyan-400 dark:hover:text-white transition-all text-xl"
+            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100008030078276" target="_blank" rel="noopener"
+            class="w-12 h-12 rounded-lg bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-cyan-400 hover:text-white dark:hover:bg-cyan-400 dark:hover:text-white transition-all text-xl"
+            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="py-8 px-4 border-t border-gray-200 dark:border-white/10">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-500 dark:text-gray-400">
+        &copy; 2026 <span class="text-cyan-400 font-semibold">Juan A. Salazar N.</span>. Todos los derechos reservados.
+      </p>
+      <p class="text-sm text-gray-500 dark:text-gray-400">
+        Hecho con <i class="fas fa-heart text-red-500"></i> y <i class="fas fa-code text-cyan-400"></i>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top"
+    class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-cyan-400 text-gray-950 shadow-neon-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 z-50 hover:bg-cyan-300">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <script src="dist/main.js"></script>
+
+  <!-- Typewriter inline -->
+  <script>
+    (function () {
+      var el = document.getElementById('typewriter');
+      if (!el) return;
+      var roles = ['Ingeniero en Informática', 'Desarrollador Web', 'Amante del Open Source'];
+      var i = 0, j = 0, isDeleting = false;
+      function loop() {
+        var current = roles[i];
+        if (isDeleting) { j--; } else { j++; }
+        el.textContent = current.substring(0, j);
+        if (!isDeleting && j === current.length) { isDeleting = true; setTimeout(loop, 2000); return; }
+        if (isDeleting && j === 0) { isDeleting = false; i = (i + 1) % roles.length; }
+        setTimeout(loop, isDeleting ? 50 : 100);
+      }
+      loop();
+    })();
+  </script>
+</body>
+
+</html>
